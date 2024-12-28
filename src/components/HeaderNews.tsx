@@ -1,19 +1,9 @@
-interface HeaderNewsProps {
-    children?: React.ReactNode;
-}
-
 /**
- *  панель переключения новостей HeaderNews
- * @param props кнопки переключения новостей
- * @returns панель переключения новостей 
+ * Заголовок новостей
  * 
+ * @param {string} props.title - заголовок
+ * @param {string} props.className- класс для стилизации
+ * @param {function} props.onChange - функция изменения представления
+ * 
+ * @returns {JSX.Element} - компонент заголовка новостей
  */
-
-export const headerNews: React.FC<HeaderNewsProps> = (props) => {
-    const { children } = props;
-    return (
-        <div className="header-news">
-            {children}
-        </div>
-    )
-}
